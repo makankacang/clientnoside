@@ -1,0 +1,361 @@
+/********** Template CSS **********/
+:root {
+  --primary: #b61313;
+  --secondary: #FE8800;
+  --light: #F5F5F5;
+  --dark: #14141F;
+  --grey: #303030;
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src:url(../assets/segoe.ttf);
+  }
+
+@font-face {
+  font-family: 'Poppin';
+  src:url(../assets/poppin.ttf);
+  }
+
+/* Add custom styling for scrolling */
+body::-webkit-scrollbar {
+  width: 0.0em; /* Adjust as needed */
+}
+
+body {
+  position: relative; /* Make sure the body is positioned relatively */
+  z-index: 1; /* Set the z-index to ensure the body is above the rectangle */
+  background-color: #181818;
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+  overflow-y: scroll; /* Show the vertical scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0); /* Transparent color */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0); /* Transparent color */
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+
+
+/*** Button ***/
+.btn {
+  transition: .5s;
+  
+}
+
+.btn.btn-danger {
+  background-color: #F05454;
+  border-radius: 3px ;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+  color: #1f1f1f;
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 0px;
+}
+
+body {
+  background-color: var(--grey); /* Set the background color to the grey color variable */
+}
+
+
+/*** Navbar ***/
+.navbar .nav-item{
+  font-family: 'Poppin';
+  position: relative;
+  color: #000000 !important;
+  font-size: 11px;
+  outline: none;
+  transition: .5s;
+}
+
+.ffs {
+  font-weight: 800;
+}
+
+.ffss {
+  font-weight: 700;
+}
+
+.fss {
+  font-size: 17px;
+}
+
+.fs2 {
+  font-size: 13px;
+}
+
+.navbar-brand {
+  padding: 145px; /* Adjust the padding to make the brand narrower */
+}
+
+.navbar .nav-item .nav-link {
+  padding: 0 19px; /* Adjust the padding to make the items narrower */
+  color: #ffffff;
+}
+
+.navbar .nav{
+  padding: 0 120px;
+}
+
+/* Add styles for navbar links */
+.nav-item a.nav-link {
+  position: relative;
+  border-bottom: 1px solid #ffffff00;
+  transition: color 0.5s, border-bottom 0.5s; /* Add transition for color and border-bottom */
+}
+
+/* Add styles for hovering navbar links */
+.nav-item a.nav-link:hover {
+  color: #f05454; /* Change link color on hover */
+  border-bottom: 1px solid #f05454; /* Add bottom border on hover */
+}
+
+/* hero header */
+.hero-header {
+  background: linear-gradient(rgba(22, 22, 22, 0.3), rgba(22, 22, 22, 0.2)), url(../assets/images/perpus.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 300px rgb(0, 0, 0, 1);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hero-header1 {
+  background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url(../assets/images/sorak.jpeg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 300px rgb(0, 0, 0, 2);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rectangle-shape {
+  position: absolute;
+  border-radius: 25px;
+  top: 700px;
+  left: 1100px;
+  width: 30%;
+  height: 20%;
+  background: linear-gradient(to bottom, #26D0CE80 50%, #1A298080 50%); /* Adjust the colors and opacity */
+  filter: blur(230px); /* Adjust the blur intensity */
+  z-index: -1; /* Set the z-index to make it appear behind the body */
+}
+
+.rectangle-shape2 {
+  position: absolute;
+  border-radius: 25px;
+  top: 1100px;
+  width: 30%;
+  height: 20%;
+  background: linear-gradient(to bottom, #F0545480 50%, #30475E80 50%); /* Adjust the colors and opacity */
+  filter: blur(200px); /* Adjust the blur intensity */
+  z-index: -1; /* Set the z-index to make it appear behind the body */
+}
+
+.rectangle-shape3 {
+  position: absolute;
+  border-radius: 25px;
+  top: 1600px;
+  left: 1100px;
+  width: 30%;
+  height: 20%;
+  background: linear-gradient(to bottom, #F0545480 50%, #30475E80 50%); /* Adjust the colors and opacity */
+  filter: blur(200px); /* Adjust the blur intensity */
+  z-index: -1; /* Set the z-index to make it appear behind the body */
+}
+
+
+.rectangle-shape4 {
+  position: absolute;
+  border-radius: 25px;
+  top: 800px;
+  left: 1000px;
+  width: 30%;
+  height: 20%;
+  background: linear-gradient(to bottom, #F0545480 50%, #30475E80 50%); /* Adjust the colors and opacity */
+  filter: blur(200px); /* Adjust the blur intensity */
+  z-index: -1; /* Set the z-index to make it appear behind the body */
+}
+
+/*** aboutus ***/
+.booking {
+  background: #7e7e7e48;
+  font-size: 13px;
+  max-width: 960px;
+  margin: 50px auto; /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 74vh; /* Make the section cover the entire viewport vertically */
+  border-radius: 20px;
+  backdrop-filter: blur(300px); /* Add backdrop filter with blur effect */
+
+  backdrop-filter: blur(10px); /* Adjust the value to control the blur intensity */
+}
+
+.booking p {
+  text-align: justify; /* Align the text within <p> to justify */
+}
+
+.booking h2 {
+  color: #F05454;
+  font-weight: 800;
+}
+
+
+/** repositori, jurnal dan konferensi **/
+.pages {
+  font-size: 13px;
+  max-width: 960px;
+  margin: 300px auto; /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 74vh; /* Make the section cover the entire viewport vertically */
+  border-radius: 20px;
+}
+
+.pages .row{
+  margin-bottom: 80px;
+}
+
+.pages p {
+  text-align: justify; /* Align the text within <p> to justify */
+}
+
+.pages h2 {
+  font-weight: 800;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container2 {
+  position: relative;
+}
+
+.image-container3 {
+  position: relative;
+}
+
+.ppp {
+  margin-left: 465px;
+  columns: 300px;
+}
+
+.image-container img {
+  position: relative;
+  z-index: 2; /* Ensure the image is on top */
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  width: 380px; /* Adjust the width of the oval shape */
+  height: 40px; /* Adjust the height of the oval shape */
+  background-color: #30475E4D; /* Adjust the color and opacity of the oval shape */
+  border-radius: 50%;
+  bottom: 25px; /* Adjust the position of the oval shape */
+  left: 50%;
+  transform: translateX(-17%);
+  z-index: 1; /* Place the oval shape behind the image */
+}
+
+.image-container2 img {
+  position: relative;
+  z-index: 2; /* Ensure the image is on top */
+  margin-left: 120px;
+  margin-bottom: 50px;
+}
+
+.image-container2::after {
+  content: "";
+  position: absolute;
+  width: 365px; /* Adjust the width of the oval shape */
+  height: 40px; /* Adjust the height of the oval shape */
+  background-color: #30475E4D; /* Adjust the color and opacity of the oval shape */
+  border-radius: 50%;
+  bottom: 45px; /* Adjust the position of the oval shape */
+  left: 50%;
+  transform: translateX(23%);
+  z-index: 1; /* Place the oval shape behind the image */
+}
+
+.image-container3 img {
+  position: relative;
+  z-index: 2; /* Ensure the image is on top */
+  margin-bottom: 50px;
+}
+
+.image-container3::after {
+  content: "";
+  position: absolute;
+  width: 400px; /* Adjust the width of the oval shape */
+  height: 40px; /* Adjust the height of the oval shape */
+  background-color: #30475E4D; /* Adjust the color and opacity of the oval shape */
+  border-radius: 50%;
+  bottom: 35px; /* Adjust the position of the oval shape */
+  left: 50%;
+  transform: translateX(-20%);
+  z-index: 1; /* Place the oval shape behind the image */
+}
+
+
+.image-container4 img {
+  position: relative;
+  z-index: 2; /* Ensure the image is on top */
+}
+
+.image-container4::after {
+  content: "";
+  position: absolute;
+  width: 450px; /* Adjust the width of the oval shape */
+  height: 40px; /* Adjust the height of the oval shape */
+  background-color: #30475E4D; /* Adjust the color and opacity of the oval shape */
+  border-radius: 50%;
+  bottom: 1440px; /* Adjust the position of the oval shape */
+  left: 53%;
+  transform: translateX(-20%);
+  z-index: 1; /* Place the oval shape behind the image */
+}
